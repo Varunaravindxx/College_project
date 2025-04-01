@@ -1,0 +1,131 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #e5f87a, #99d8f5);
+}
+
+/* Container */
+.container {
+    width: 850px;
+    background: white;
+    display: flex;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Form Box Layout */
+.form-box {
+    display: flex;
+    width: 100%;
+}
+
+/* Left Panel */
+.left-panel {
+    width: 40%;
+    background: #e3f38c;
+    color: rgb(0, 0, 0);
+    padding: 50px;
+    text-align: center;
+}
+
+.left-panel h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.left-panel button {
+    background: white;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+/* Right Panel */
+.right-panel {
+    background: #c2e9fb;
+    width: 60%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Form Group */
+.form-group {
+    display: none;
+}
+
+.form-group h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Input Box */
+.input-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 15px 0;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px 12px 12px 50px;
+    text-align: left;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.input-box i {
+    position: absolute;
+    left: 15px;
+    color: #888;
+}
+
+/* Button Styles */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #000000;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #d7e77e;
+}
+
+/* Links and Paragraphs */
+p {
+    text-align: center;
+    margin: 10px 0;
+}
+
+p a {
+    color: #4A90E2;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+

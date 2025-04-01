@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+    <script src="upload.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Upload Your Files</h2>
+
+        <!-- Upload Section with Drag and Drop -->
+        <form id="uploadForm" enctype="multipart/form-data">
+            <label for="uploaderName">Uploader Name:</label>
+            <input type="text" id="uploaderName" name="uploaderName" required>
+            <div id="dropZone" class="upload-box">
+                <i class="fa-solid fa-cloud-arrow-up fa-3x"></i>
+                <p>Drag & Drop</p>
+                <span>OR</span>
+                <button type="button" id="chooseFile">Browse</button>
+                <input type="file" id="fileInput" name="file" accept=".pdf,.docx" hidden>
+            </div>
+        </form>
+
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+
+        <!-- Notification Message -->
+        <div id="notification" class="notification hidden"></div>
+
+        <!-- Uploaded Files Section -->
+        <div id="uploaded-files">
+            <h3>Uploaded Files</h3>
+
+            <!-- Scrollable File List -->
+            <div class="scroll-container">
+                <ul id="fileList">
+                    <!-- Files will be dynamically loaded here -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
